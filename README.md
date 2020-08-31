@@ -14,12 +14,12 @@
 ## Techie concepts, documentation and utils
 ### **[Docker][2]** 
 Platform to build, run and share applications with containers.
-* Docker architecture: client-server architecture.
+* **Docker architecture**: client-server architecture.
 ![architecture image](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img10-768x401.png)
-    * Client docker CLI: (docker command) talks to the daemon using a REST API.
-    * API REST: specifies the interfaces that programs can use to communicate with the daemon and tell it what to do.
-    * Server docker daemon (dockerd): listens for Docker API request and manages `Docker objects`.
-    * Docker repository: Stores docker images. They can be public or private. Docker Hub and Docker Cloud are public repositories. When you use `docker pull` or `docker run` the necessary images are extracted from the configured registry (Docker Hub by default).
+    * **Client docker CLI**: (docker command) talks to the daemon using a REST API.
+    * **API REST**: specifies the interfaces that programs can use to communicate with the daemon and tell it what to do.
+    * **Server docker daemon (dockerd)**: listens for Docker API request and manages `Docker objects`.
+    * **Docker repository**: Stores docker images. They can be public or private. Docker Hub and Docker Cloud are public repositories. When you use `docker pull` or `docker run` the necessary images are extracted from the configured registry (Docker Hub by default).
 
 **[Container][3]**: Software that packages up code and all its dependencies so the application runs quickly and reliably in differents environment.
 
