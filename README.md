@@ -12,10 +12,9 @@
 - Server should run with an autoindex that must be able to be disabled.
 
 ## Techie concepts, documentation and utils
-### **[Docker][2]**: Platform to build, run and share applications with containers.
+### **[Docker][2]** 
+Platform to build, run and share applications with containers.
 * Docker architecture: client-server architecture.
-
-![arch image2](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img5.png)
 ![architecture image](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img10-768x401.png)
     * Client docker CLI: (docker command) talks to the daemon using a REST API.
     * API REST: specifies the interfaces that programs can use to communicate with the daemon and tell it what to do.
