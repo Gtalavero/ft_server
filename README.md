@@ -12,7 +12,8 @@
 - Server should run with an autoindex that must be able to be disabled.
 
 ## Techie concepts, documentation and utils
-### **Docker** 
+### **Docker**
+---
 Platform to build, run and share applications with containers. 
 [Official documentation][2]
 #### **Docker architecture**
@@ -24,7 +25,7 @@ Platform to build, run and share applications with containers.
 * **Docker repository**: Stores docker images. They can be public or private. Docker Hub and Docker Cloud are public repositories. When you use `docker pull` or `docker run` the necessary images are extracted from the configured registry (Docker Hub by default).
 
 **Container**: Software that packages up code and all its dependencies so the application runs quickly and reliably in differents environment. [+INFO][3]
-
+---
 **LEMP stack**: Software package  variation of LAMP (Linux, Apache, MySQLP, PHP). In LEMP, Apache is replaced with the lightweight yet powerfull Ngynx.
 **[Ngynx][4]**: HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server
 
