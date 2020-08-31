@@ -15,8 +15,10 @@
 ### **Docker** 
 Platform to build, run and share applications with containers. 
 [Official documentation][2]
-* **Docker architecture**: client-server architecture.
+#### **Docker architecture**
 ![architecture image](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img10-768x401.png)
+
+ Is a client-server architecture.
     * **Client docker CLI**: (docker command) talks to the daemon using a REST API.
     * **API REST**: specifies the interfaces that programs can use to communicate with the daemon and tell it what to do.
     * **Server docker daemon (dockerd)**: listens for Docker API request and manages `Docker objects`.
