@@ -12,9 +12,19 @@
 - Server should run with an autoindex that must be able to be disabled.
 
 ## Techie concepts, documentation and utils
-**[Docker][2]**: Platform to build, run and share applications with containers.
+### **[Docker][2]**: Platform to build, run and share applications with containers.
+- Docker architecture: Client-server architecture.
+![architecture image](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img10-768x401.png)
+1. Client docker CLI: talks to the daemon using a REST API.
+2. Docker daemon(dockerd): Listens for Docker API request and manages Docker objects (as images, containers, networks and volumes)
+3. Docker repository: Stores docker images. They can be public or private. Docker Hub and Docker Cloud are public repositories. When you use `docker pull` or `docker run` the necessary images are extracted from the configured registry (Docker Hub by default).
+
 **[Container][3]**: Software that packages up code and all its dependencies so the application runs quickly and reliably in differents environment.
+
+**LEMP stack**: Software package  variation of LAMP (Linux, Apache, MySQLP, PHP). In LEMP, Apache is replaced with the lightweight yet powerfull Ngynx.
+**[Ngynx][4]**: HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server
 
 [1]: https://www.42madrid.com/
 [2]: https://docs.docker.com/
 [3]: https://www.docker.com/resources/what-container
+[4]: http://nginx.org/en/
