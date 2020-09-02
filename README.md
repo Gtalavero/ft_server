@@ -14,8 +14,10 @@
 ## Techie concepts, documentation and utils
 ### **[Docker][2]**: Platform to build, run and share applications with containers.
 * Docker architecture: client-server architecture.
-![architecture image](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img10-768x401.png)
 ![arch image2](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img5.png)
+
+![architecture image](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img10-768x401.png)
+
     * Client docker CLI: (docker command) talks to the daemon using a REST API.
     * API REST: specifies the interfaces that programs can use to communicate with the daemon and tell it what to do.
     * Server docker daemon (dockerd): listens for Docker API request and manages `Docker objects`.
@@ -23,6 +25,7 @@
 
 **[Container][3]**: Software that packages up code and all its dependencies so the application runs quickly and reliably in differents environment.
 
+**Docker compose**: tool for defining and running multi-container Docker apps.
 **LEMP stack**: Software package  variation of LAMP (Linux, Apache, MySQLP, PHP). In LEMP, Apache is replaced with the lightweight yet powerfull Ngynx.
 **[Ngynx][4]**: HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server
 
