@@ -12,20 +12,22 @@
 - Server should run with an autoindex that must be able to be disabled.
 
 ## Techie concepts, documentation and utils
-### **[Docker][2]**: Platform to build, run and share applications with containers.
-* Docker architecture: client-server architecture.
-![arch image2](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img5.png)
-
+### **Docker**
+---
+Platform to build, run and share applications with containers. 
+[Official documentation][2]
+#### **Docker architecture**
 ![architecture image](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img10-768x401.png)
 
-    * Client docker CLI: (docker command) talks to the daemon using a REST API.
-    * API REST: specifies the interfaces that programs can use to communicate with the daemon and tell it what to do.
-    * Server docker daemon (dockerd): listens for Docker API request and manages `Docker objects`.
-    * Docker repository: Stores docker images. They can be public or private. Docker Hub and Docker Cloud are public repositories. When you use `docker pull` or `docker run` the necessary images are extracted from the configured registry (Docker Hub by default).
-
-**[Container][3]**: Software that packages up code and all its dependencies so the application runs quickly and reliably in differents environment.
+ Is a client-server architecture.
+* **Client docker CLI**: (docker command) talks to the daemon using a REST API.
+* **API REST**: specifies the interfaces that programs can use to communicate with the daemon and tell it what to do.
+* **Docker repository**: Stores docker images. They can be public or private. Docker Hub and Docker Cloud are public repositories. When you use `docker pull` or `docker run` the necessary images are extracted from the configured registry (Docker Hub by default).
 
 **Docker compose**: tool for defining and running multi-container Docker apps.
+**Container**: Software that packages up code and all its dependencies so the application runs quickly and reliably in differents environment. [+INFO][3]
+
+---
 **LEMP stack**: Software package  variation of LAMP (Linux, Apache, MySQLP, PHP). In LEMP, Apache is replaced with the lightweight yet powerfull Ngynx.
 **[Ngynx][4]**: HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server
 
