@@ -1,21 +1,29 @@
-# SO
-FROM debian:stable
+# Dockerfile reference: https://docs.docker.com/engine/reference/builder/#run
 
-# Set the working directory.
-#WORKDIR /usr/src/app
-WORKDIR /usr/src
+# Creates the image from a official image
+FROM    debian:buster
 
-# Copy the file from your host to your current location.
-#COPY package.json .
+# Add info to the metadata. You can see with "docker image inspect <image>"
+LABEL   maintainer="gtalaverodev@gmail.com"  \
+        description="L.E.M.P.(Linux, ~E~Nginx, MySQL, Php) stack with Wordpress, phpMyAdmin and a SQL db"
+
+# # Set the working directory. 
+# WORKDIR /home
 
 # Run the command inside your image filesystem.
-#RUN npm install
+RUN     apt-get update && apt-get install -y \
+        nginx \
+        mariadb-server
+
+# Copy from "srcs" to actual location (Workdir)
+#COPY srcs/* .
 
 # Add metadata to the image to describe which port the container is listening on at runtime.
 #EXPOSE 8080
 
-# Run the specified command within the container.
-#CMD [ "npm", "start" ]
+# Run the specified command within the container. Provide defaults for an executing container
+# CMD service nginx start && \
+#     service mysql start
+CMD service nginx start
 
-# Copy the rest of your app's source code from your host to your image filesystem.
-#COPY . .
+
