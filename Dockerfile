@@ -13,17 +13,19 @@ LABEL   maintainer="gtalaverodev@gmail.com"  \
 # Run the command inside your image filesystem.
 RUN     apt-get update && apt-get install -y \
         nginx \
-        mariadb-server
+        mariadb-server \
+	php-fpm \
+	php-mysql
 
 # Copy from "srcs" to actual location (Workdir)
-#COPY srcs/* .
+COPY srcs/* ./
 
 # Add metadata to the image to describe which port the container is listening on at runtime.
-#EXPOSE 8080
+EXPOSE 8080
 
 # Run the specified command within the container. Provide defaults for an executing container
 # CMD service nginx start && \
-#     service mysql start
-CMD service nginx start
+# service mysql start
+CMD bash ./init.sh
 
 
