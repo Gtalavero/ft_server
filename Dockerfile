@@ -1,4 +1,4 @@
-FROM    debian:buster
+#FROM    debian:buster
 
 LABEL   maintainer="gtalaverodev@gmail.com"  \
         description="L.E.M.P.(Linux, ~E~Nginx, MySQL, Php) stack with Wordpress, phpMyAdmin and a SQL db"
@@ -6,13 +6,21 @@ LABEL   maintainer="gtalaverodev@gmail.com"  \
 RUN     apt-get update && apt-get install -y \
         nginx \
         mariadb-server \
-		php-fpm \
-		php-mysql
+	php-fpm \
+	php-mysql
 
-COPY srcs/init.sh ./
+RUN apt-get install -y \
+	vim \
+	procps \
+	curl
 
-#EXPOSE 8080
+#Additional PHP extensions for WordPress
+#RUN apt install -y php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
 
-ENTRYPOINT ./init.sh
+COPY srcs/* ./tmp/
+
+#EXPOSE 80 443
+
+ENTRYPOINT ./tmp/init.sh
 
 
