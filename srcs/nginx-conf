@@ -1,14 +1,14 @@
 server {
     listen 80 default_server;
-    server_name _;
+    server_name localhost;
     return 301 	https://$host$request_uri;
 }
 
 server {
     listen 443 ssl;
-    server_name _;
+    server_name localhost;
     
-    root /var/www/wordpress;
+    root /var/www/html;
     index index.php index.html index.htm;
     
     ssl_certificate /etc/ssl/certs/server.crt;
