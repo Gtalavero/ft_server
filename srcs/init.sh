@@ -21,7 +21,10 @@ service mysql start
 service nginx start
 service php7.3-fpm start
 mysql < /tmp/mysql-conf.sql
+mysql wordpressdb < /tmp/dump.sql
+rm -rf /tmp/*
 
+echo "*********************************************"
 echo "Ya puedes acceder!!"
 echo "*********************************************"
 echo "http://localhost"
