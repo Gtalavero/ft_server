@@ -5,9 +5,11 @@
 1. Clone
 
 2. Build the image (inside the directory)
+    
     docker build --tag lemp_img .
 
 3. Run the container
+    
     docker run -p 80:80 -p 443:443 -it lemp_img
 
 4. Go to http://localhost
