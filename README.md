@@ -1,6 +1,8 @@
 # Aim of the proyect
 [42 school][1] project about use `Docker` to install a complete web server which will run multiples services: `Wordpress`, `phpMyAdmin` and a `SQL` Database.
 
+My [Notion][3] tutorial (spanish) about the proyect step by step.
+
 # HOW TO RUN
 1. Clone
 
@@ -33,8 +35,7 @@ Platform to build, run and share applications with containers.
 #### **Docker architecture**
 ![architecture image](https://www.imaginaformacion.com/wp-content/uploads/2018/11/img10-768x401.png)
 
-### **Docker**
-My [Notion][3] about the proyect step by step.
+
 
 [1]: https://www.42madrid.com/
 [2]: https://docs.docker.com/
